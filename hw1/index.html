@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS HW 1 Netflix</title>
+    <style>
+        
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(netflixbg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.66);
+    z-index: 1;
+  }
+
+  
+  .content {
+    position: relative;
+    z-index: 2;
+    color: white; 
+    text-align: center;
+    margin-top: 20%;
+    font-size: 24px;
+  }
+
+        .header{
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+            padding: 20px;
+            padding-right: 100px;
+            position: fixed;
+             top: 0;
+            width: 100%;
+            z-index: 10;
+
+        }
+
+        img{
+            height: 100px;
+            width: 300px;
+        }
+
+        .buttons button{
+            flex-direction: row;
+           padding: 8px 16px;
+           font-size: 16px;
+           font-weight: bold;
+           color: white;
+           background-color: red;
+           border: none;
+           border-radius: 4px;
+           cursor: pointer;
+        }
+
+        .main-section{
+            position: relative;
+            height: 100vh;
+            background-image: url(bg.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .main-position .back{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0,0,0.5);
+            z-index: 1;
+        }
+
+        .main-section .content{
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .main-section h1{
+            font-size: 2.3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .main-section p{
+            font-size: 1.2em;
+            /* margin-bottom: 80px; */
+           
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="header">
+        <div class="logo">
+            <img src="logo.png" width="50px" height="50px">
+        </div>
+        
+        <div class="buttons">
+            <button class="sign-in">Sign In</button>
+            <button class="register">Register</button>
+        </div>
+    </nav>
+
+    <section class="main-section">
+        <div class="back"></div>
+        <div class="content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+        </div>
+    </section>
+
+</body>
+</html>
