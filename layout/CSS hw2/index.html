@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Layout</title>
+  <style>
+    /* Basic Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Navbar */
+    .navbar {
+      display: flex;
+      align-items: center;
+      background-color: #333;
+      padding: 15px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      margin: 10px;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    /* Header Section */
+    .header {
+      background-image: url('./img/1.png'); /* Add your background image */
+      background-size: cover;
+      background-position: center;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    /* Three Boxes */
+    .boxes {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+    .box1 {
+      width: 30%;
+      height: 500px;
+      background-color: #f0f0f0;
+      background-image: url('./img/2.png'); /* Add your box image */
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .box2 {
+      width: 30%;
+      height: 500px;
+      background-color: #f0f0f0;
+      background-image: url('./img/3.png'); /* Add your box image */
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .box3 {
+      width: 30%;
+      height: 500px;
+      background-color: #f0f0f0;
+      background-image: url('./img/4.png'); /* Add your box image */
+      background-size: cover;
+      background-position: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Content Section */
+    .content {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background-color: black;
+    }
+    .content .text {
+      width: 50%;
+      padding-right: 20px;
+      color: white;
+    }
+    .content .text p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    .content .image {
+      width: 50%;
+      background-image: url('./img/5.png'); /* Add your right-side image */
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a class="active" href="#">Home</a>
+   
+    <a href="#">Services</a>
+    <a href="#">About</a>
+    <a href="#">Project</a>
+    <a href="#">Contact</a>
+
+   
+
+  </div>
+
+  <!-- Header Section -->
+  <div class="header">
+    Half Background Image
+  </div>
+
+  <!-- Three Boxes Section -->
+  <div class="boxes">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+  </div>
+
+  <!-- Content Section with Text and Image -->
+  <div class="content">
+    <div class="text">
+      <h2>About Our Services</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Quisque viverra dolor nec massa facilisis, eu tincidunt urna dignissim. 
+        Sed fringilla turpis vitae lacus ultricies, sit amet fermentum eros bibendum.
+        Phasellus bibendum quam ut eros pretium, in auctor elit vulputate.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Quisque viverra dolor nec massa facilisis, eu tincidunt urna dignissim. 
+        Sed fringilla turpis vitae lacus ultricies, sit amet fermentum eros bibendum.
+        Phasellus bibendum quam ut eros pretium, in auctor elit vulputate.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+        Quisque viverra dolor nec massa facilisis, eu tincidunt urna dignissim. 
+        Sed fringilla turpis vitae lacus ultricies, sit amet fermentum eros bibendum.
+        Phasellus bibendum quam ut eros pretium, in auctor elit vulputate.
+      </p>
+    </div>
+    <div class="image"></div>
+  </div>
+
+</body>
+</html>
