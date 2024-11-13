@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm a box</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .box h2 {
+            margin-top: 0;
+        }
+
+        .box p {
+            margin: 0;
+        }
+
+        .list-box {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .list-box li {
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            margin-bottom: 5px;
+        }
+
+        .buttons-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .buttons-links button,
+        .buttons-links a {
+            background-color: #ccc;
+            color: #333;
+            border: none;
+            padding: 5px 10px;
+            text-decoration: none;
+            margin: 0 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>I'm a box</h2>
+        </div>
+        <div class="box">
+            <h2>I'm also a box with some text in it..</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod molestiae cumque dolores provident! Quo repellat odio rerum, ipsa maiores adipisci veritatis beatae, non ipsam minus dignissimos amet cupiditate nesciunt quas?</p>
+        </div>
+        <div class="box">
+            <ul class="list-box">
+                <li>this list is a box</li>
+                <li>and all the list items in it are boxes</li>
+            </ul>
+        </div>
+        <div class="buttons-links">
+            <button>buttons</button>
+            <a href="#">links</a>
+        </div>
+    </div>
+</body>
+</html>
